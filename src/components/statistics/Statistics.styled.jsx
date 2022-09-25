@@ -12,24 +12,13 @@ export const Title = styled.h2`
 `
 export const List = styled.ul`
     list-style: none;
-    width: 100%;
+    width: 90%;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 `
-
-/* const colors = {
-    0: "#047E89",
-    1: "#C69FA8",
-    2: "#DCE7EF",
-    3: "#ECB8AD",
-    4: "#E9CBBF",
-} 
-background-color: ${props => {
-    return colors.getRandomInt(5)
-}}; */
 
 export const Item = styled.li`
     width: 20%;
@@ -37,6 +26,22 @@ export const Item = styled.li`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: ${key => {
+        switch(key){
+            case 'id-1':
+                return '#047E89';
+            case 'id-2':
+                return '#C69FA8';
+            case 'id-3':
+                return '#DCE7EF';
+            case 'id-4':
+                return '#ECB8AD';
+            case 'id-5':
+                return '#E9CBBF';
+            default:
+                return 'black';
+        }
+    }};
 `
 export const Type = styled.span`
     color: white;
