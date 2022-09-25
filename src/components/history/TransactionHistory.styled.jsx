@@ -20,6 +20,9 @@ export const Th = styled.th`
 
 export const Tr = styled.tr`
     border: 1px solid #f0f0f0;
+    :nth-child(even) {
+        background-color: #f0f0f0;
+    }
 `
 export const Td = styled.td`
     border: 1px solid #f0f0f0;
