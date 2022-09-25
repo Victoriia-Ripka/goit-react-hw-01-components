@@ -20,22 +20,21 @@ export const List = styled.ul`
     justify-content: center
 `
 
-const colors = {
-    1: "#047E89",
-    2: "#C69FA8",
-    3: "#DCE7EF",
-    4: "#ECB8AD",
-    5: "#E9CBBF",
-}
-
+/* const colors = {
+    0: "#047E89",
+    1: "#C69FA8",
+    2: "#DCE7EF",
+    3: "#ECB8AD",
+    4: "#E9CBBF",
+} 
+background-color: ${props => {
+    return colors.getRandomInt(5)
+}}; */
 
 export const Item = styled.li`
     width: 20%;
     display: flex;
     flex-direction: column;
-    background-color: ${colors => {
-        return random.choice(colors)
-    }};
     align-items: center;
     justify-content: center;
 `
