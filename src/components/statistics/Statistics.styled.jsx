@@ -20,28 +20,17 @@ export const List = styled.ul`
     justify-content: center;
 `
 
+function getRandomHexColor(index){
+    return `#${Math.floor(Math.random() * 16777215).toString(16)}`
+}
+
 export const Item = styled.li`
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: ${key => {
-        switch(key){
-            case 'id-1':
-                return '#047E89';
-            case 'id-2':
-                return '#C69FA8';
-            case 'id-3':
-                return '#DCE7EF';
-            case 'id-4':
-                return '#ECB8AD';
-            case 'id-5':
-                return '#E9CBBF';
-            default:
-                return 'black';
-        }
-    }};
+    background-color: ${ props => getRandomHexColor(props.index)};
 `
 export const Type = styled.span`
     color: white;
