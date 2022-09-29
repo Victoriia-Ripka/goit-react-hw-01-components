@@ -13,7 +13,7 @@ export const Friend = ({isOnline, avatar, name}) => {
     )
 }
 
-Friend.propsType = {
+Friend.propTypes = {
     avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isOnline: PropTypes.bool.isRequired,
