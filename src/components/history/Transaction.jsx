@@ -13,7 +13,7 @@ export const Transaction = ( {type, amount, currency} ) => {
 }
 
 
-Transaction.PropTypes = {
+Transaction.propTypes = {
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
